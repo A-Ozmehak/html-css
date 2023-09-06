@@ -5,13 +5,15 @@ body {
   color: #333;
 }
 
-.container {
+.header-container {
   background-color: #F0EFE9;
 }
 
 .features-container {
   border: 1px solid rgba(25, 25, 25, 0.2);
   border-radius: 2px;
+  height: 600px;
+  padding: 5rem 5rem;
 }
 
 a {
@@ -23,10 +25,28 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 100px;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.banner-text {
+  font-size: 1.25rem;
+  line-height: 32px;
 }
 
 ul {
@@ -57,8 +77,13 @@ ul {
   width: 180px;
 }
 
+.feature-learn-more-btn {
+  width: 460px;
+}
+
 .border-bottom {
   border-bottom: 1px solid #ccc;
+  margin-top: 1rem;
 }
 
 .border-left {
@@ -70,12 +95,16 @@ ul {
   margin-right: 5px;
 }
 
+.icon-left {
+  margin-left: 5px;
+}
+
 .social-media-icon {
   margin-right: 10px;
 }
 
 .company-info {
-  width: 684px;
+  width: 300px;
 }
 .company-info li {
   font-size: 15px;
@@ -103,4 +132,11 @@ ul {
 
 .justify-center {
   justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .company-info {
+    width: 684px;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=global.css.map */
