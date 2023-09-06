@@ -1,0 +1,106 @@
+/* global.scss */
+body {
+  font-family: Inter;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  background-color: #F0EFE9;
+}
+
+.features-container {
+  border: 1px solid rgba(25, 25, 25, 0.2);
+  border-radius: 2px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #0069d9;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.primary-button {
+  background-color: #f9d783;
+  color: #000;
+  border-radius: 20px;
+  width: 122px;
+  height: 48px;
+}
+
+.secondary-button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  width: 122px;
+  height: 48px;
+}
+
+.get-consulting-btn {
+  width: 208px;
+}
+
+.learn-more-btn {
+  width: 180px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.border-left {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.social-media-icon {
+  margin-right: 10px;
+}
+
+.company-info {
+  width: 684px;
+}
+.company-info li {
+  font-size: 15px;
+}
+
+.nav-list {
+  width: 306px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}/*# sourceMappingURL=global.css.map */
