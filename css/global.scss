@@ -6,6 +6,7 @@ $primary-background: #F0EFE9;
 $black: #000;
 $white: #fff;
 $hover-color: #0069d9;
+$footer-background: #0e1021;
 
 body {
     font-family: Inter;
@@ -17,8 +18,195 @@ body {
     // padding: 0 15px;
 }
 
-.header-container {
+.container {
     background-color: $primary-background;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.team-container {
+    background-color: $primary-color;
+
+    button {
+        width: 221px;
+        height: 56px;
+    }
+
+    .testimonials-container {
+        background-color: $white;
+
+        span {
+            font-family: "Inter";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            font-style: normal;
+            text-align: center;
+            letter-spacing: -10px;
+            color: #f94d1c;
+        }
+
+        h6 {
+            font-family: "DM Sans";
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 55px;
+            font-style: normal;
+            text-align: center;
+            color: #191919;
+        }
+    }
+}
+
+.blog-container {
+
+    .red-title {
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        font-style: normal;
+        text-align: left;
+        letter-spacing: -10px;
+        color: #f94d1c;
+    }
+
+    h4 {
+        font-family: "DM Sans";
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 55px;
+        font-style: normal;
+        text-align: left;
+        color: #191919;
+    }
+
+    button {
+        width: 221px;
+        height: 56px;
+    }
+
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 420px;
+        height: 230px;
+    }
+
+    span {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 26px;
+        font-style: normal;
+        text-align: left;
+        color: #6a6c71;
+    }
+
+    h6 {
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 33px;
+        font-style: normal;
+        text-align: left;
+        color: #191919;
+    }
+
+    p {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 28px;
+        font-style: normal;
+        text-align: left;
+        // letter-spacing: -10px;
+        color: rgba(25,25,25,0.7 );
+    }
+}
+
+.subscribe-container {
+    background-color: $primary-background;
+    padding: 2rem 2rem;
+
+    h4 {
+        font-family: "DM Sans";
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 55px;
+        font-style: normal;
+        text-align: left;
+        color: #191919;
+    }
+
+    input {
+        border-radius: 20px;
+        width: 308px;
+        height: 56px;
+        margin-right: 1rem;
+    }
+
+    button {
+        width: 171px;
+        height: 56px;
+    }
+}
+
+footer {
+    grid-area: footer;
+    background-color: $footer-background;
+    color: $white;
+    padding: 2rem 2rem;
+
+    p {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 26px;
+        font-style: normal;
+        text-align: left;
+        color: rgba(255,255,255,0.7 );
+    }
+
+    a {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        font-style: normal;
+        text-align: left;
+        color: rgba(255,255,255,0.7 );
+    }
+
+    .footer-link-title {
+        color: $white;
+        font-family: "DM Sans";
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 33px;
+        font-style: normal;
+        text-align: left;
+    }
+}
+
+.header-container {
+    width: 100%;
 }
 
 .features-container {
@@ -126,10 +314,6 @@ ul {
     width: 306px;
 }
 
-
-
-
-
 // reusable flex classes
 
 .d-flex {
@@ -152,11 +336,14 @@ ul {
     justify-content: center;
 }
 
-
+@media screen and (max-width: 1000px) {
+    .company-info {
+        width: 684px;
+    }
+}
 
 @media screen and (max-width: 1500px) {
     .company-info {
         width: 684px;
-        flex-wrap: wrap;
     }
 }

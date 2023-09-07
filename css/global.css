@@ -5,8 +5,171 @@ body {
   color: #333;
 }
 
-.header-container {
+.container {
   background-color: #F0EFE9;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.team-container {
+  background-color: #f9d783;
+}
+.team-container button {
+  width: 221px;
+  height: 56px;
+}
+.team-container .testimonials-container {
+  background-color: #fff;
+}
+.team-container .testimonials-container span {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: -10px;
+  color: #f94d1c;
+}
+.team-container .testimonials-container h6 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+}
+
+.blog-container .red-title {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: -10px;
+  color: #f94d1c;
+}
+.blog-container h4 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.blog-container button {
+  width: 221px;
+  height: 56px;
+}
+.blog-container .blog-content {
+  display: flex;
+  flex-direction: column;
+}
+.blog-container img {
+  width: 420px;
+  height: 230px;
+}
+.blog-container span {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  font-style: normal;
+  text-align: left;
+  color: #6a6c71;
+}
+.blog-container h6 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.blog-container p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+
+.subscribe-container {
+  background-color: #F0EFE9;
+  padding: 2rem 2rem;
+}
+.subscribe-container h4 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.subscribe-container input {
+  border-radius: 20px;
+  width: 308px;
+  height: 56px;
+  margin-right: 1rem;
+}
+.subscribe-container button {
+  width: 171px;
+  height: 56px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #0e1021;
+  color: #fff;
+  padding: 2rem 2rem;
+}
+footer p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footer-link-title {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+}
+
+.header-container {
+  width: 100%;
 }
 
 .features-container {
@@ -134,9 +297,13 @@ ul {
   justify-content: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .company-info {
+    width: 684px;
+  }
+}
 @media screen and (max-width: 1500px) {
   .company-info {
     width: 684px;
-    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=global.css.map */
