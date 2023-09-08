@@ -7,29 +7,385 @@ body {
 
 .container {
   background-color: #F0EFE9;
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
 }
 
 header {
   grid-area: header;
 }
+header .border-left {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+}
+header .header-container {
+  width: 100%;
+}
+header .border-bottom {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1rem;
+}
+header .company-info {
+  width: 300px;
+}
+header .company-info li {
+  font-size: 15px;
+}
+header .nav-list {
+  width: 306px;
+}
 
-main {
-  grid-area: main;
+.banner-container h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 100px;
+}
+.banner-container .banner-text {
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+.banner-container .get-consulting-btn {
+  width: 208px;
+}
+.banner-container .learn-more-btn {
+  width: 180px;
+}
+
+.features-container {
+  border: 1px solid rgba(25, 25, 25, 0.2);
+  border-radius: 2px;
+  padding: 5rem 2rem;
+}
+.features-container .feature-learn-more-btn {
+  width: 100%;
+}
+.features-container .red-title {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+}
+.features-container h3 {
+  font-family: "DM Sans";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 54px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.features-container .feature-title {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+
+.about-company-container {
+  margin-bottom: 5rem;
+}
+.about-company-container span {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+}
+.about-company-container h6 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 54px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.about-company-container p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  font-style: normal;
+  color: rgba(25, 25, 25, 0.7);
+}
+.about-company-container .learn-more-btn {
+  width: 180px;
+  height: 56px;
+}
+.about-company-container .play-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #191919;
+  border-radius: 30px;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.about-company-container .intro-video {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+}
+.about-company-container .quote-box {
+  width: 368px;
+  height: 180px;
+  filter: drop-shadow(0px 18px 20px rgba(44, 44, 44, 0.15));
+  background: #beebff;
+}
+.about-company-container .quote-box p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  font-style: normal;
+  text-align: left;
+}
+.about-company-container .quote-box span {
+  color: #F94D1C;
+}
+.about-company-container .quote-box .quote {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  font-style: italic;
+  color: #191919;
+}
+
+.our-services-container {
+  background: #f0efe9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-services-container .container {
+  background-color: #fff;
+  padding: 0 2rem;
+}
+.our-services-container .container:hover {
+  background-color: #f9d783;
+}
+.our-services-container .container:hover button {
+  background-color: #fff;
+  color: #000;
+}
+.our-services-container .container button {
+  background-color: #000;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 30px;
+}
+.our-services-container span {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #f94d1c;
+}
+.our-services-container h6 {
+  font-family: "DM Sans";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 54px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.our-services-container .service-title {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.our-services-container button {
+  width: 221px;
+  height: 56px;
+  background: #f0efe9;
+  margin: 3rem 0;
+}
+.our-services-container button:hover {
+  background-color: #f9d783;
+}
+
+.choose-us-container {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose-us-container span {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+}
+.choose-us-container h6 {
+  font-family: "DM Sans";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.choose-us-container .list-title {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.choose-us-container i {
+  margin-top: 2rem;
+}
+.choose-us-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+.choose-us-container li {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.choose-us-container img {
+  width: 100%;
+}
+.choose-us-container .img-bg {
+  display: none;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-container span {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: center;
+  color: #f94d1c;
+}
+.project-container h6 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  margin-top: 2rem;
+}
+.project-container img {
+  width: 100%;
+  height: 311px;
+}
+.project-container .border-bottom {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(25, 25, 25, 0.2);
+  margin-bottom: 3rem;
+}
+.project-container .read-more {
+  text-align: end;
+}
+.project-container button {
+  width: 238px;
+  height: 56px;
+  margin-bottom: 3rem;
 }
 
 .team-container {
   background-color: #f9d783;
 }
-.team-container button {
+.team-container .title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-container .title-container span {
+  color: #f94d1c;
+  padding-top: 2rem;
+}
+.team-container .title-container h6 {
+  font-family: "DM Sans";
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  font-size: 35px;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.team-container .title-container button {
+  margin-bottom: 3rem;
   width: 221px;
   height: 56px;
 }
+.team-container .team-member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.team-container .team-member-container h6 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-bottom: 1rem;
+}
+.team-container .team-member-container p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
 .team-container .testimonials-container {
   background-color: #fff;
+  padding-top: 5rem;
 }
 .team-container .testimonials-container span {
   font-family: "Inter";
@@ -38,7 +394,10 @@ main {
   line-height: 22px;
   font-style: normal;
   text-align: center;
-  letter-spacing: -10px;
+  color: #f94d1c;
+}
+.team-container .testimonials-container .customer-role {
+  padding-bottom: 3rem;
   color: #f94d1c;
 }
 .team-container .testimonials-container h6 {
@@ -49,8 +408,17 @@ main {
   font-style: normal;
   text-align: center;
   color: #191919;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.team-container .testimonials-container button {
+  width: 181px;
+  height: 56px;
 }
 
+.blog-container {
+  margin-top: 10rem;
+}
 .blog-container .red-title {
   font-family: "Inter";
   font-size: 18px;
@@ -58,7 +426,6 @@ main {
   line-height: 22px;
   font-style: normal;
   text-align: left;
-  letter-spacing: -10px;
   color: #f94d1c;
 }
 .blog-container h4 {
@@ -69,6 +436,7 @@ main {
   font-style: normal;
   text-align: left;
   color: #191919;
+  margin-top: 2rem;
 }
 .blog-container button {
   width: 221px;
@@ -79,7 +447,7 @@ main {
   flex-direction: column;
 }
 .blog-container img {
-  width: 420px;
+  width: 100%;
   height: 230px;
 }
 .blog-container span {
@@ -90,6 +458,7 @@ main {
   font-style: normal;
   text-align: left;
   color: #6a6c71;
+  margin-top: 1rem;
 }
 .blog-container h6 {
   font-family: "DM Sans";
@@ -99,6 +468,8 @@ main {
   font-style: normal;
   text-align: left;
   color: #191919;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 .blog-container p {
   font-family: "Inter";
@@ -108,11 +479,12 @@ main {
   font-style: normal;
   text-align: left;
   color: rgba(25, 25, 25, 0.7);
+  margin-bottom: 4rem;
 }
 
 .subscribe-container {
   background-color: #F0EFE9;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 .subscribe-container h4 {
   font-family: "DM Sans";
@@ -125,20 +497,34 @@ main {
 }
 .subscribe-container input {
   border-radius: 20px;
-  width: 308px;
+  width: 100%;
   height: 56px;
   margin-right: 1rem;
 }
 .subscribe-container button {
-  width: 171px;
+  width: 100%;
   height: 56px;
+  margin-bottom: 2rem;
+}
+.subscribe-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscribe-container .img-container {
+  display: flex;
+  justify-content: end;
 }
 
 footer {
-  grid-area: footer;
   background-color: #0e1021;
   color: #fff;
   padding: 2rem 2rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 footer p {
   font-family: "Inter";
@@ -167,16 +553,13 @@ footer .footer-link-title {
   font-style: normal;
   text-align: left;
 }
-
-.header-container {
-  width: 100%;
+footer .footer-icons {
+  display: flex;
+  flex-direction: row;
 }
 
-.features-container {
-  border: 1px solid rgba(25, 25, 25, 0.2);
-  border-radius: 2px;
-  height: 600px;
-  padding: 5rem 5rem;
+.icon {
+  margin-right: 5px;
 }
 
 a {
@@ -187,39 +570,10 @@ a:hover {
   color: #0069d9;
 }
 
-h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  font-family: sans-serif;
-  line-height: 100px;
-}
-
-h3 {
-  font-size: 2.8rem;
-}
-
-p {
-  font-size: 1.375rem;
-  font-weight: bold;
-}
-
-span {
-  font-size: 1rem;
-}
-
-.banner-text {
-  font-size: 1.25rem;
-  line-height: 32px;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .primary-button {
   background-color: #f9d783;
   color: #000;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 122px;
   height: 48px;
 }
@@ -227,35 +581,19 @@ ul {
 .secondary-button {
   background-color: #fff;
   color: #000;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 122px;
   height: 48px;
 }
 
-.get-consulting-btn {
-  width: 208px;
+.black-btn {
+  background-color: #000;
+  border-radius: 30px;
+  color: #fff;
 }
 
-.learn-more-btn {
-  width: 180px;
-}
-
-.feature-learn-more-btn {
-  width: 460px;
-}
-
-.border-bottom {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1rem;
-}
-
-.border-left {
-  border-left: 1px solid #ccc;
-  padding-left: 15px;
-}
-
-.icon {
-  margin-right: 5px;
+ul {
+  list-style-type: none;
 }
 
 .icon-left {
@@ -264,46 +602,4 @@ ul {
 
 .social-media-icon {
   margin-right: 10px;
-}
-
-.company-info {
-  width: 300px;
-}
-.company-info li {
-  font-size: 15px;
-}
-
-.nav-list {
-  width: 306px;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.justify-space-between {
-  justify-content: space-between;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .company-info {
-    width: 684px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .company-info {
-    width: 684px;
-  }
 }/*# sourceMappingURL=global.css.map */
