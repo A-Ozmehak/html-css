@@ -30,16 +30,20 @@ body {
 }
 
 header {
-    grid-area: header;
+    // grid-area: header;
+
+    img {
+        padding: 2rem 2rem;
+    }
 
     .border-left {
         border-left: 1px solid #ccc;
         padding-left: 15px;
     }
 
-    .header-container {
-        width: 100%;
-    }
+    // .header-container {
+    //     width: 100%;
+    // }
 
     .border-bottom {
         border-bottom: 1px solid #ccc;
@@ -47,36 +51,72 @@ header {
     }
 
     .company-info {
-        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        // width: 300px;
         li {
             font-size: 15px;
         }
     }
 
-    .nav-list {
-        width: 306px;
+    .social-media-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        li {
+            margin-right: 1rem;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            width: 306px;
+        }
     }
 }
 
 .banner-container {
-    h1 {
-        font-size: 6rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        line-height: 100px;
-    }
 
-    .banner-text {
-        font-size: 1.25rem;
-        line-height: 32px;
-    }
-
-    .get-consulting-btn {
-        width: 208px;
-    }
+    .title-container {
+        padding: 2rem;
+        h1 {
+            // font-size: 6rem;
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: sans-serif;
+            // line-height: 100px;
+        }
     
-    .learn-more-btn {
-        width: 180px;
+        .banner-text {
+            font-size: 1.25rem;
+            line-height: 32px;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .get-consulting-btn {
+            width: 208px;
+        }
+        
+        .learn-more-btn {
+            width: 180px;
+            margin: 2rem 0;
+        }
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
@@ -85,7 +125,13 @@ header {
     border-radius: 2px;
     // height: 600px;
     padding: 5rem 2rem;
+    margin-bottom: 5rem;
 
+    .features {
+      i {
+        padding-top: 2rem;
+      }
+    }
 
 .feature-learn-more-btn {
     // width: 460px;
@@ -127,6 +173,10 @@ h3 {
 
 .about-company-container {
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     span {
         font-family: "Inter";
         font-size: 18px;
@@ -139,13 +189,59 @@ h3 {
 
     h6 {
         font-family: "DM Sans";
-        font-size: 45px;
+        // font-size: 45px;
+        font-size: 35px;
         font-weight: bold;
         line-height: 54px;
         font-style: normal;
         text-align: left;
         color: #191919;
+        margin-top: 2rem;
+        padding: 0 2rem;
     }
+
+    .img-container {
+        width: 100%;
+        // height: 50px;
+        img {
+            width: 100%;
+            // position: absolute;
+        }
+        .quote-box {
+            // width: 368px;
+            // height: 180px;
+            // position: relative;
+            top: 270px;
+            bottom: 0;
+            height: 130px;
+            // width: 100px;
+            padding: 0 1rem;
+            filter: drop-shadow(0px 18px 20px rgba(44,44,44,0.15 ));
+            background: #beebff;
+    
+            p {
+                font-family: "DM Sans";
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 30px;
+                font-style: normal;
+                text-align: left;
+            }
+            span {
+                color:#F94D1C
+            }
+    
+            .quote {
+                font-family: "Inter";
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+                font-style: italic;
+                color: #191919;
+            }
+        }
+    }
+   
 
     p {
         font-family: "Inter";
@@ -153,7 +249,9 @@ h3 {
         font-weight: normal;
         line-height: 32px;
         font-style: normal;
-        color: rgba(25,25,25,0.7 )
+        color: rgba(25,25,25,0.7 );
+        padding: 0 1rem;
+        margin-top: 0;
     }
 
     .learn-more-btn {
@@ -161,50 +259,24 @@ h3 {
         height: 56px;
     }
 
-    .play-btn {
-        width: 48px;
-        height: 48px;
-        background-color: $white;
-        border: 1px solid #191919;
-        border-radius: 30px;
-        margin-left: 2rem;
-        margin-right: 1rem;
-    }
-
-    .intro-video {
-        font-family: "Inter";
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 16px;
-        font-style: normal;
-        text-align: center;
-        color: #191919;
-    }
-
-    .quote-box {
-        width: 368px;
-        height: 180px;
-        filter: drop-shadow(0px 18px 20px rgba(44,44,44,0.15 ));
-        background: #beebff;
-
-        p {
-            font-family: "DM Sans";
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 30px;
-            font-style: normal;
-            text-align: left;
+    .video-btn-container {
+        margin: 2rem 0;
+        .play-btn {
+            width: 48px;
+            height: 48px;
+            background-color: $white;
+            border: 1px solid #191919;
+            border-radius: 30px;
+            margin-right: 1rem;
         }
-        span {
-            color:#F94D1C
-        }
-
-        .quote {
+    
+        .intro-video {
             font-family: "Inter";
             font-size: 16px;
-            font-weight: 500;
-            line-height: 26px;
-            font-style: italic;
+            font-weight: normal;
+            line-height: 16px;
+            font-style: normal;
+            text-align: center;
             color: #191919;
         }
     }
