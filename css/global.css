@@ -1,4 +1,50 @@
 /* global.scss */
+.icon {
+  margin-right: 5px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #0069d9;
+}
+
+.primary-button {
+  background-color: #f9d783;
+  color: #000;
+  border-radius: 30px;
+  width: 122px;
+  height: 48px;
+}
+
+.secondary-button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 30px;
+  width: 122px;
+  height: 48px;
+}
+
+.black-btn {
+  background-color: #000;
+  border-radius: 30px;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon-left {
+  margin-left: 5px;
+}
+
+.social-media-icon {
+  margin-right: 10px;
+}
+
 body {
   font-family: Inter;
   font-size: 16px;
@@ -8,41 +54,40 @@ body {
 .container {
   background-color: #F0EFE9;
 }
-
-header img {
+.container header img {
   padding: 2rem 2rem;
 }
-header .border-left {
+.container header .border-left {
   border-left: 1px solid #ccc;
   padding-left: 15px;
 }
-header .border-bottom {
+.container header .border-bottom {
   border-bottom: 1px solid #ccc;
   margin-top: 1rem;
 }
-header .company-info {
+.container header .company-info {
   display: flex;
   flex-wrap: wrap;
 }
-header .company-info li {
+.container header .company-info li {
   font-size: 15px;
 }
-header .social-media-list {
+.container header .social-media-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
-header .social-media-list li {
+.container header .social-media-list li {
   margin-right: 1rem;
 }
-header nav {
+.container header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header nav .nav-list {
+.container header nav .nav-list {
   display: flex;
   justify-content: space-between;
   width: 306px;
@@ -220,6 +265,8 @@ header nav .nav-list {
 .our-services-container .container {
   background-color: #fff;
   padding: 0 2rem;
+  width: 80%;
+  margin-bottom: 2rem;
 }
 .our-services-container .container:hover {
   background-color: #f9d783;
@@ -466,6 +513,8 @@ header nav .nav-list {
 
 .blog-container {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 .blog-container .red-title {
   font-family: "Inter";
@@ -476,9 +525,9 @@ header nav .nav-list {
   text-align: left;
   color: #f94d1c;
 }
-.blog-container h4 {
+.blog-container .blog-title h4 {
   font-family: "DM Sans";
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 55px;
   font-style: normal;
@@ -486,19 +535,23 @@ header nav .nav-list {
   color: #191919;
   margin-top: 2rem;
 }
-.blog-container button {
+.blog-container .blog-title button {
   width: 221px;
   height: 56px;
+  margin-bottom: 1rem;
+}
+.blog-container .blog-title button:hover {
+  background-color: #f9d783;
 }
 .blog-container .blog-content {
   display: flex;
   flex-direction: column;
 }
-.blog-container img {
+.blog-container .blog-content img {
   width: 100%;
   height: 230px;
 }
-.blog-container span {
+.blog-container .blog-content span {
   font-family: "Inter";
   font-size: 16px;
   font-weight: normal;
@@ -508,7 +561,7 @@ header nav .nav-list {
   color: #6a6c71;
   margin-top: 1rem;
 }
-.blog-container h6 {
+.blog-container .blog-content h6 {
   font-family: "DM Sans";
   font-size: 22px;
   font-weight: bold;
@@ -519,7 +572,7 @@ header nav .nav-list {
   margin-top: 1rem;
   margin-bottom: 0;
 }
-.blog-container p {
+.blog-container .blog-content p {
   font-family: "Inter";
   font-size: 16px;
   font-weight: normal;
@@ -536,28 +589,29 @@ header nav .nav-list {
 }
 .subscribe-container h4 {
   font-family: "DM Sans";
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 55px;
   font-style: normal;
   text-align: left;
   color: #191919;
 }
-.subscribe-container input {
-  border-radius: 20px;
-  width: 100%;
-  height: 56px;
-  margin-right: 1rem;
-}
-.subscribe-container button {
-  width: 100%;
-  height: 56px;
-  margin-bottom: 2rem;
-}
 .subscribe-container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 500px;
+}
+.subscribe-container form input {
+  border-radius: 30px;
+  width: 100%;
+  height: 56px;
+  margin-right: 1rem;
+}
+.subscribe-container form button {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 2rem;
 }
 .subscribe-container .img-container {
   display: flex;
@@ -565,16 +619,21 @@ header nav .nav-list {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #0e1021;
   color: #fff;
   padding: 2rem 2rem;
 }
-footer ul {
+footer .footer-top-part {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-footer p {
+footer .footer-top-part p {
   font-family: "Inter";
   font-size: 16px;
   font-weight: normal;
@@ -583,16 +642,16 @@ footer p {
   text-align: left;
   color: rgba(255, 255, 255, 0.7);
 }
-footer a {
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 40px;
-  font-style: normal;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.7);
+footer .footer-top-part .footer-links {
+  display: flex;
+  flex-direction: column;
 }
-footer .footer-link-title {
+footer .footer-top-part .footer-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer-top-part .footer-links ul .footer-link-title {
   color: #fff;
   font-family: "DM Sans";
   font-size: 22px;
@@ -601,53 +660,111 @@ footer .footer-link-title {
   font-style: normal;
   text-align: left;
 }
-footer .footer-icons {
+footer .footer-top-part .footer-links ul a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footer-bottom-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  max-width: 1270px;
+}
+footer .footer-bottom-part .footer-icons {
   display: flex;
   flex-direction: row;
 }
 
-.icon {
-  margin-right: 5px;
+@media screen and (min-width: 576px) {
+  .blog-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .blog-container .blog-content {
+    width: 400px;
+  }
+  .blog-container .blog-content img {
+    width: 400px;
+    height: 230px;
+  }
+  footer .footer-top-part .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
-
-a {
-  color: #000;
-  text-decoration: none;
+@media screen and (min-width: 1200px) {
+  .blog-container {
+    max-width: 1320px;
+  }
+  .blog-container .blog-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-container .blog-title h4 {
+    font-size: 45px;
+    margin-top: 0;
+  }
+  .blog-container .blog-title button {
+    margin-bottom: 0;
+  }
+  .blog-container .content-container {
+    display: flex;
+  }
+  .blog-container .content-container .blog-content {
+    margin-right: 2rem;
+  }
+  .blog-container .content-container .blog-content img {
+    width: 380px;
+  }
+  .subscribe-container {
+    display: grid;
+    grid-template-columns: 30% auto 200px;
+    max-width: 1440px;
+  }
+  .subscribe-container h4 {
+    font-size: 45px;
+  }
+  .subscribe-container form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+  .subscribe-container form input {
+    width: 308px;
+  }
+  .subscribe-container form button {
+    margin-bottom: 0;
+    width: 171px;
+  }
+  .subscribe-container .img-container {
+    align-items: end;
+  }
+  footer .footer-top-part {
+    flex-direction: row;
+    max-width: 1440px;
+  }
+  footer .footer-top-part .footer-description {
+    width: 30%;
+  }
+  footer .footer-bottom-part {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    max-width: 1440px;
+  }
 }
-a:hover {
-  color: #0069d9;
-}
-
-.primary-button {
-  background-color: #f9d783;
-  color: #000;
-  border-radius: 30px;
-  width: 122px;
-  height: 48px;
-}
-
-.secondary-button {
-  background-color: #fff;
-  color: #000;
-  border-radius: 30px;
-  width: 122px;
-  height: 48px;
-}
-
-.black-btn {
-  background-color: #000;
-  border-radius: 30px;
-  color: #fff;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.icon-left {
-  margin-left: 5px;
-}
-
-.social-media-icon {
-  margin-right: 10px;
+@media screen and (min-width: 1400px) {
+  .blog-container .content-container .blog-content img {
+    width: 420px;
+  }
 }/*# sourceMappingURL=global.css.map */
