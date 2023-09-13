@@ -327,56 +327,69 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .container {
-        background-color: $white;
-        padding: 0 2rem;
-        width: 80%;
-        margin-bottom: 2rem;
-        &:hover {
-            background-color: $primary-color;
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6rem;
+
+        span {
+            font-family: "Inter";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            color: #f94d1c;
         }
-        &:hover button {
+    
+        h6 {
+            font-family: "DM Sans";
+            // font-size: 45px;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 54px;
+            font-style: normal;
+            text-align: left;
+            color: #191919;
+            padding: 0 2rem;
+            margin-top: .5rem;
+        }
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .container {
             background-color: $white;
-            color: $black;
+            padding: 0 2rem;
+            width: 80%;
+            margin-bottom: 2rem;
+            &:hover {
+                background-color: $primary-color;
+            }
+            &:hover button {
+                background-color: $white;
+                color: $black;
+            }
+            button {
+                background-color: $black;
+                color: $white;
+                width: 56px;
+                height: 56px;
+                border-radius: 30px;
+            }
+    
+            .service-title {
+                font-family: "DM Sans";
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 33px;
+                font-style: normal;
+                text-align: left;
+                color: #191919;
+            }
         }
-        button {
-            background-color: $black;
-            color: $white;
-            width: 56px;
-            height: 56px;
-            border-radius: 30px;
-        }
     }
-
-    span {
-        font-family: "Inter";
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-        color: #f94d1c;
-    }
-
-    h6 {
-        font-family: "DM Sans";
-        // font-size: 45px;
-        font-size: 35px;
-        font-weight: bold;
-        line-height: 54px;
-        font-style: normal;
-        text-align: left;
-        color: #191919;
-    }
-
-    .service-title {
-        font-family: "DM Sans";
-        font-size: 22px;
-        font-weight: bold;
-        line-height: 33px;
-        font-style: normal;
-        text-align: left;
-        color: #191919;
-    }
-
+  
     button {
         width: 221px;
         height: 56px;
@@ -397,70 +410,78 @@ body {
     justify-content: center;
     align-items: center;
 
-    span {
-        font-family: "Inter";
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-        font-style: normal;
-        text-align: left;
-        // letter-spacing: -10px;
-        color: #f94d1c;
-    }
-
-    h6 {
-        font-family: "DM Sans";
-        // font-size: 45px;
-        font-size: 35px;
-        font-weight: bold;
-        line-height: 55px;
-        font-style: normal;
-        text-align: left;
-        color: #191919;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    .list-title {
-        font-family: "DM Sans";
-        font-size: 22px;
-        font-weight: bold;
-        line-height: 33px;
-        font-style: normal;
-        text-align: left;
-        color: #191919;
-    }
-
-    i {
-        margin-top: 2rem;
-    }
-
-    ul {
+    .left-container {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
-        padding-left: 0;
-    }
+        justify-content: center;
+        padding: 0 2rem;
 
-    li {
-        font-family: "Inter";
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 28px;
-        font-style: normal;
-        text-align: left;
-        color: rgba(25,25,25,0.7 );
-    }
+        span {
+            font-family: "Inter";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            font-style: normal;
+            text-align: left;
+            color: #f94d1c;
+        }
+    
+        h6 {
+            font-family: "DM Sans";
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 55px;
+            font-style: normal;
+            text-align: left;
+            color: #191919;
+            margin-top: 2rem;
+            margin-bottom: 0;
+            padding: 0 4rem;
+        }
 
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                i {
+                    margin-top: 2rem;
+                }
+    
+                .list-title {
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 33px;
+                    font-style: normal;
+                    text-align: left;
+                    color: #191919;
+                }
+    
+                li {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    font-style: normal;
+                    text-align: left;
+                    color: rgba(25,25,25,0.7 );
+                }
+            } 
+        }   
+    }
+    
     img {
         width: 100%;
     }
 
     .img-bg {
-        // background: #f0efe9;
-        // width: 1057px;
-        // height: 425px;
         display: none;
     }
 }
@@ -944,6 +965,82 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+    .our-services-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        max-width: 1420px;
+
+        .title-container {
+            align-items: start;
+            width: 520px;
+
+            span {
+                padding-left: 2rem;
+            }
+        }
+        
+        .services {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 2rem;
+
+            .container {
+                width: 250px;
+            }
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+
+    .choose-us-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .left-container {
+            justify-content: flex-start;
+            align-items: start;
+            ul {
+                align-items: start;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 4rem;
+
+                    i {
+                        margin-bottom: 20px;
+                        margin-top: 1rem;
+                        height: 10px;
+                        width: 10px;
+                    }
+
+                    .list-title {
+                        margin-left: 1rem;
+                    }
+                }
+                .description {
+                    margin-left: 23px;
+                }
+            }
+            h6 {
+                font-size: 45px;
+                padding: 0;
+            }
+        }
+        .img-bg {
+            background: #f0efe9;
+            // width: 1057px;
+            width: 597px;
+            height: 425px;
+            display: block;
+        }
+    }
+
     .team-container { 
 
         .title-container {
@@ -1069,6 +1166,19 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
+    .our-services-container {
+        align-items: start;
+        
+        .services {
+              grid-template-columns: auto auto auto auto;
+            .container {
+                width: 250px;
+            }
+        }
+
+        
+    }
+
     .project-container {
         .projects {
             .project {
