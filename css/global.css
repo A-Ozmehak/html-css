@@ -404,17 +404,30 @@ body {
   color: #191919;
   margin-top: 2rem;
 }
-.project-container img {
+.project-container .projects img {
   width: 100%;
   height: 311px;
 }
-.project-container .border-bottom {
+.project-container .projects .border-bottom {
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(25, 25, 25, 0.2);
   margin-bottom: 3rem;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #000;
 }
-.project-container .read-more {
+.project-container .projects .read-more {
   text-align: end;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  font-style: normal;
+  color: #000;
 }
 .project-container button {
   width: 238px;
@@ -766,9 +779,6 @@ footer .footer-bottom-part .footer-icons {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-container .title-container {
-    width: 1330px;
-  }
   .team-container .title-container span {
     padding-left: 0;
   }
@@ -782,7 +792,6 @@ footer .footer-bottom-part .footer-icons {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    width: 1330px;
     margin: 0;
   }
   .team-container .testimonials-container {
@@ -865,23 +874,27 @@ footer .footer-bottom-part .footer-icons {
   }
 }
 @media screen and (min-width: 1400px) {
+  .project-container .projects .project {
+    margin-bottom: 3rem;
+  }
+  .project-container .projects .project img {
+    width: 645px;
+  }
+  .project-container .projects .project-first-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project-container .projects .project-second-row {
+    display: flex;
+    justify-content: space-between;
+  }
   .team-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .team-container .title-container {
     width: 1330px;
-  }
-  .team-container .title-container span {
-    padding-left: 0;
-  }
-  .team-container .title-container div h6 {
-    padding-left: 0;
-  }
-  .team-container .title-container div button {
-    margin-right: 0;
   }
   .team-container .team-members-container {
     grid-template-columns: auto auto auto auto;
