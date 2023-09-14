@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -6,48 +7,94 @@ body {
   font-family: Inter;
   font-size: 16px;
   color: #333;
+  margin: 0;
 }
 
-.container {
+header {
   background-color: #F0EFE9;
+  padding: 16px;
 }
-.container header img {
-  padding: 2rem 2rem;
-}
-.container header .border-left {
-  border-left: 1px solid #ccc;
-  padding-left: 15px;
-}
-.container header .border-bottom {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1rem;
-}
-.container header .company-info {
+header .container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
-}
-.container header .company-info li {
-  font-size: 15px;
-}
-.container header .social-media-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  justify-content: space-between;
+  gap: 70px;
 }
-.container header .social-media-list li {
-  margin-right: 1rem;
+header .container .hamburger-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
 }
-.container header nav {
+@media (min-width: 992px) {
+  header .container .hamburger-btn {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+header .container .menu .top-menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #DAD9D3;
+  padding-bottom: 10px;
 }
-.container header nav .nav-list {
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
+header .container .menu .top-menu .contact-information {
+  display: none;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
+}
+header .container .menu .top-menu .contact-information .contact-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #DAD9D3;
+}
+header .container .menu .top-menu .contact-information .contact-box.last {
+  border: none;
+}
+header .container .menu .top-menu .contact-information .contact-box i {
+  margin-right: 5px;
+}
+header .container .menu .main-menu {
   display: flex;
   justify-content: space-between;
-  width: 306px;
+  margin-top: 35px;
+}
+header .container .menu .main-menu nav a {
+  margin-right: 35px;
+  position: relative;
+  display: inline-block;
+}
+header .container .menu .main-menu nav a.active {
+  font-weight: 600;
+}
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+  content: "";
+  font-weight: 500;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3%;
+  transform: translate(calc(50% - 15px));
 }
 
 .banner-container .title-container {
