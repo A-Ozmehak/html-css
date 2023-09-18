@@ -26,24 +26,46 @@ a {
 
 .primary-button {
     background-color: $primary-color;
+    border: 1px solid $primary-color;
     color: $black;
-    border-radius: 30px;
-    width: 122px;
-    height: 48px;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 16px;
+    text-align: center;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
 }
 
 .secondary-button {
     background-color: $white;
+    border: 1px solid $black;
     color: $black;
     border-radius: 30px;
-    width: 122px;
-    height: 48px;
+    padding: 12px 25px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 16px;
+    text-align: center;
 }
 
 .black-btn {
     background-color: $black;
+    border: 1px solid $black;
     border-radius: 30px;
     color: $white;
+    padding: 12px 25px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 16px;
+    text-align: center;
 }
 
 ul {

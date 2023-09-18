@@ -7,7 +7,7 @@
         <meta name=author content="Mikaela Lundsgård">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Html-Css</title>
@@ -16,58 +16,59 @@
     <body>
         <header>
             <div class="container">
-                <img src="/img/Logo.svg" alt="logo">
-                <button class="hamburger-btn"><i class="fa-solid fa-bars"></i></button>
-                <div class="menu">
-                    <div class="top-menu">
-                        <div class="contact-information">
-                            <div class="contact-box">
-                                <i class="fa-regular fa-phone-volume"></i>
-                                +46 (8) 121 470 50
+                <div class="header-container">
+                    <img src="/img/Logo.svg" alt="logo">
+                    <a class="hamburger-btn"><i class="fa-solid fa-bars"></i></a>
+                    <div class="menu">
+                        <div class="top-menu">
+                            <div class="contact-information">
+                                <div class="contact-box">
+                                    <i class="fa-regular fa-phone-volume"></i>
+                                    +46 (8) 121 470 50
+                                </div>
+                                <div class="contact-box">
+                                    <i class="fa-regular fa-envelope-dot icon"></i>
+                                    info@crito.com
+                                </div>
+                                <div class="contact-box last">
+                                    <i class="fa-regular fa-location-dot icon"></i>
+                                    Sveavägen 31, 111 34 STOCKHOLM
+                                </div>
                             </div>
-                            <div class="contact-box">
-                                <i class="fa-regular fa-envelope-dot icon"></i>
-                                info@crito.com
-                            </div>
-                            <div class="contact-box last">
-                                <i class="fa-regular fa-location-dot icon"></i>
-                                Sveavägen 31, 111 34 STOCKHOLM
+                            <div class="social-media">
+                                <a href="https://facebook.com" target="_blank" class="active"><i class="social-media-icon fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="social-media-icon fa-brands fa-twitter"></i></a>
+                                <a href="https://instagram.com" target="_blank"><i class="social-media-icon fa-brands fa-instagram"></i></a>
+                                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
-                        <div class="social-media">
-                            <a href="https://facebook.com" target="_blank" class="active"><i class="social-media-icon fa-brands fa-facebook"></i></a>
-                            <a href="https://twitter.com" target="_blank"><i class="social-media-icon fa-brands fa-twitter"></i></a>
-                            <a href="https://instagram.com" target="_blank"><i class="social-media-icon fa-brands fa-instagram"></i></a>
-                            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <div class="main-menu">
+                            <nav>
+                                <a href="home.html">Home</a>
+                                <a href="home.html">Service</a>
+                                <a href="home.html">News</a>
+                                <a href="home.html">Contact</a>
+                            </nav>
+                            <a class="primary-button">Login<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                         </div>
-                    </div>
-                    <div class="main-menu">
-                        <nav>
-                            <a href="home.html">Home</a>
-                            <a href="home.html">Service</a>
-                            <a href="home.html">News</a>
-                            <a href="home.html">Contact</a>
-                        </nav>
-                        <button class="primary-button">Login<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
-                    </div>
-                </div>
-                    
+                    </div>  
+                </div> 
             </div>
         </header>
-            <div class="banner-container">
-                <div>
+            <section class="showcase container">
+                <div class="showcase-container">
                     <div class="title-container">
                         <h1>We provide The Best business solutions</h1>
-                        <p class="banner-text">Establish your vision and value proposition and turn them into testable prototypes.</p>
+                        <p class="showcase-text">Establish your vision and value proposition and turn them into testable prototypes.</p>
+                        <div class="buttons">
+                            <a class="primary-button">Get Consulting<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
+                            <a class="secondary-button">Learn more<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
+                        </div>
                     </div>
-                    <img src="/img/HeroImg.png" alt="banner image">
+                    <img src="/img/Showcase.png" alt="man with a tablet">
                 </div>
-                <div class="btn-container">
-                    <button class="primary-button get-consulting-btn">Get Consulting<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
-                    <button class="secondary-button learn-more-btn">Learn more<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
-                </div>
-            </div>
-        <main>
+            </section>
+        <main class="container">
             <div class="logos-container">
                 <img src="/img/Logo(1).svg" alt="paperz logo">
                 <img src="/img/Logo(2).svg" alt="dorfus logo">
@@ -79,7 +80,7 @@
                 <div class="title-container">
                     <p class="red-title">Features</p>
                     <h3>Our Accounting is trusted by thousand of companies</h3>
-                    <button class="primary-button feature-learn-more-btn">Learn more<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                    <a class="primary-button">Learn more<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                 </div>
                 <div>
                     <div class="features">
@@ -113,11 +114,11 @@
                         <span>About Company</span>
                         <h6>We Are Business Consulting & Credit Repair Experts</h6>
                     </div>
-                    <p class="company-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. <br/><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. <br/><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
                     <div class="buttons-container">
-                        <button class="learn-more-btn black-btn">Learn More<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                        <a class="learn-more-btn black-btn">Learn More<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                         <div class="video-btn-container">
-                            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                            <a class="play-btn"><i class="fa-solid fa-play"></i></a>
                             <span class="intro-video">Intro Video</span>
                         </div>
                     </div>
@@ -137,29 +138,29 @@
                     <h6>We Provide The Best Service For Consulting</h6>
                 </div>
                 <div class="services">
-                    <div class="container">
+                    <div class="content">
                         <p class="service-title">Business Advice</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <a><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <div class="container">
+                    <div class="content">
                         <p class="service-title">Startup Business</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <a><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <div class="container">
+                    <div class="content">
                         <p class="service-title">Financial Advice</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <a><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <div class="container">
+                    <div class="content">
                         <p class="service-title">Risk Management</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <a><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="button-container">
-                    <button class="secondary-button">Browse Services<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                    <a class="secondary-button">Browse Services<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                 </div>
             </div>
 
@@ -225,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="black-btn">All Recent Projects<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                <a class="black-btn">All Recent Projects<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
             </div>
 
             <div class="team-container">
@@ -233,7 +234,7 @@
                     <span>Meet our team</span>
                     <div>                    
                         <h6>Experience Team Members</h6>
-                        <button class="primary-button">Browse Team<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                        <a class="primary-button">Browse Team<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                     </div>
 
                 </div>
@@ -294,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="black-btn">All Reviews<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                    <a class="black-btn">All Reviews<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                 </div>
             </div>
 
@@ -302,7 +303,7 @@
                 <p class="red-title">Article & News</p>
                 <div class="blog-title">
                     <h4>Get Every Single Articles & News</h4>
-                    <button class="secondary-button">Browse Articles<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                    <a class="secondary-button">Browse Articles<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                 </div>
                 <div class="content-container">
                     <div class="blog-content">
@@ -330,7 +331,7 @@
                 <h4>Get News Updates By Signup</h4>
                 <form>
                     <input type="text" placeholder="username@domain.com">
-                    <button class="primary-button">Subscribe<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
+                    <a class="primary-button">Subscribe<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                 </form>
                 <div class="img-container">                
                     <img src="/img/Element.png" alt="subscribe image">
@@ -338,7 +339,7 @@
 
             </div>
         </main>
-        <footer>
+        <footer class="container">
             <div class="footer-top-part">
                 <div class="footer-description">
                     <img src="/img/Logo.svg" alt="logo">

@@ -9,24 +9,45 @@ a {
 }
 .primary-button {
   background-color: #f9d783;
+  border: 1px solid #f9d783;
   color: #000;
-  border-radius: 30px;
-  width: 122px;
-  height: 48px;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 16px;
+  text-align: center;
+}
+.primary-button i {
+  margin-left: 8px;
+  font-size: 0.9em;
 }
 
 .secondary-button {
   background-color: #fff;
+  border: 1px solid #000;
   color: #000;
   border-radius: 30px;
-  width: 122px;
-  height: 48px;
+  padding: 12px 25px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 16px;
+  text-align: center;
 }
 
 .black-btn {
   background-color: #000;
+  border: 1px solid #000;
   border-radius: 30px;
   color: #fff;
+  padding: 12px 25px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 16px;
+  text-align: center;
 }
 
 ul {
