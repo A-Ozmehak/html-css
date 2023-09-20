@@ -1,53 +1,89 @@
 /* global.scss */
-.icon {
-  margin-right: 5px;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
 .primary-button {
   background-color: #f9d783;
   border: 1px solid #f9d783;
   color: #000;
-  border-radius: 25px;
-  padding: 12px 25px;
-  font-weight: normal;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
   font-size: 16px;
-  font-family: "Inter";
-  line-height: 16px;
-  text-align: center;
+  border-radius: 25px;
 }
 .primary-button i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-
-.secondary-button {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-  border-radius: 30px;
-  padding: 12px 25px;
-  font-weight: normal;
-  font-size: 16px;
-  font-family: "Inter";
-  line-height: 16px;
-  text-align: center;
-}
-
-.black-btn {
+.primary-button:hover {
   background-color: #000;
   border: 1px solid #000;
-  border-radius: 30px;
-  color: #fff;
-  padding: 12px 25px;
-  font-weight: normal;
+  color: #f9d783;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
   font-size: 16px;
-  font-family: "Inter";
-  line-height: 16px;
-  text-align: center;
+}
+.secondary-button i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.secondary-button:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9px;
+  color: #f9d783;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+.section-title {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.section-title p {
+  color: red;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -60,4 +96,9 @@ ul {
 
 .social-media-icon {
   margin-right: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }/*# sourceMappingURL=global.css.map */
