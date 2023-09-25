@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
 /* global.scss */
 .btn-yellow {
   background-color: #f9d783;
   border: 1px solid #f9d783;
-  color: #000;
+  color: #191919;
   text-decoration: none;
   padding: 15px 30px;
   font-weight: 600;
@@ -14,15 +16,15 @@
   font-size: 0.9em;
 }
 .btn-yellow:hover {
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: #191919;
+  border: 1px solid #191919;
   color: #f9d783;
 }
 
 .btn-transparent {
   background-color: transparent;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #191919;
+  color: #191919;
   border-radius: 25px;
   text-decoration: none;
   padding: 15px 30px;
@@ -34,15 +36,15 @@
   font-size: 0.9em;
 }
 .btn-transparent:hover {
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: #191919;
+  border: 1px solid #191919;
   color: #fff;
 }
 
 .btn-black {
   background-color: #191919;
   border: 1px solid #191919;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: 15px 30px;
   font-weight: 600;
@@ -55,7 +57,7 @@
   color: #f9d783;
 }
 .btn-black:hover {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: 1px solid #191919;
   color: #191919;
 }
@@ -75,7 +77,7 @@
 }
 .section-title h2 {
   color: #191919;
-  font-family: "DM sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
 }
@@ -99,6 +101,6 @@ ul {
 }
 
 a {
-  color: #000;
+  color: #191919;
   text-decoration: none;
 }/*# sourceMappingURL=global.css.map */

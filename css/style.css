@@ -5,8 +5,6 @@
 }
 
 body {
-  font-family: Inter;
-  font-size: 16px;
   color: #333;
   margin: 0;
 }
@@ -137,7 +135,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 .showcase-section .container .showcase-left .title-container h1 {
   font-size: 40px;
   font-weight: bold;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
 }
 @media (min-width: 768px) {
   .showcase-section .container .showcase-left .title-container h1 {
@@ -258,7 +256,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   font-size: 30px;
 }
 .features-section .container .features .feature .feature-title {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -321,8 +319,8 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   font-size: 1.1em;
 }
 .about-company-section .container .text-container .buttons-container .video-btn-container .play-btn:hover {
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: #191919;
+  border: 1px solid #191919;
   color: #fff;
 }
 .about-company-section .container .text-container .buttons-container .video-btn-container .intro-video {
@@ -395,7 +393,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   padding: 0 1rem;
 }
 .about-company-section .container .img-container .quote-box p span {
-  color: #F94D1C;
+  color: red;
   margin-left: 5px;
   font-family: "DM Sans";
   font-size: 16px;
@@ -403,7 +401,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   line-height: 30px;
   font-style: normal;
   text-align: left;
-  color: #f94d1c;
+  color: red;
 }
 .about-company-section .container .img-container .quote-box .quote {
   font-family: "Inter";
@@ -416,7 +414,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 }
 
 .our-services-section {
-  background: #f0efe9;
+  background-color: #F0EFE9;
   padding-bottom: 80px;
   position: relative;
 }
@@ -471,10 +469,10 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 }
 .our-services-section .container .services .content:hover a {
   background-color: #fff;
-  color: #000;
+  color: #191919;
 }
 .our-services-section .container .services .content a {
-  background-color: #000;
+  background-color: #191919;
   color: #fff;
   width: 56px;
   height: 56px;
@@ -482,7 +480,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   border-radius: 30px;
 }
 .our-services-section .container .services .content .service-title {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -498,7 +496,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   .our-services-section .container .button-container button {
     width: 221px;
     height: 56px;
-    background: #f0efe9;
+    background-color: #F0EFE9;
     margin: 3rem 0;
   }
   .our-services-section .container .button-container button:hover {
@@ -556,7 +554,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   }
 }
 .choose-us-section .containers .text-content .content .text .list-title {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -603,7 +601,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 .choose-us-section .containers .img-content .img-bg {
   display: none;
   height: 425px;
-  background: #f0efe9;
+  background-color: #F0EFE9;
 }
 @media (min-width: 1200px) {
   .choose-us-section .containers .img-content .img-bg {
@@ -649,7 +647,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   height: auto;
 }
 .project-section .container .project-and-cases a h3 {
-  font-family: "DM sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
   padding-top: 22px;
@@ -723,7 +721,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   margin-bottom: 3rem;
   width: 221px;
   height: 56px;
-  border: 1px solid #000;
+  border: 1px solid #191919;
 }
 @media (min-width: 1200px) {
   .team-section .container .section-title .btn a {
@@ -755,7 +753,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   margin-bottom: 3rem;
 }
 .team-section .container .team-members .team-member h3 {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -766,7 +764,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   margin-top: 1rem;
 }
 .team-section .container .team-members .team-member p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 28px;
@@ -805,7 +803,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
 }
 @media (min-width: 576px) {
   .team-section .container .testimonials-container .quotes .client-quote {
@@ -840,7 +838,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   line-height: 33px;
   font-style: normal;
   text-align: left;
-  color: #000;
+  color: #191919;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 576px) {
@@ -850,7 +848,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 }
 .team-section .container .testimonials-container .quotes .client-quote .customer .customer-info .customer-role {
   padding-bottom: 3rem;
-  color: #f94d1c;
+  color: red;
   margin-top: 0;
 }
 .team-section .container .testimonials-container .btn {
@@ -956,7 +954,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   }
 }
 .blog-section .container .content-container .blog-content span {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 26px;
@@ -966,7 +964,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   margin-top: 1rem;
 }
 .blog-section .container .content-container .blog-content h3 {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -977,7 +975,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   margin-bottom: 0;
 }
 .blog-section .container .content-container .blog-content p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -1107,7 +1105,7 @@ footer .container .footer-top-part .footer-description img {
   padding-bottom: 20px;
 }
 footer .container .footer-top-part .footer-description p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 26px;
@@ -1133,7 +1131,7 @@ footer .container .footer-top-part .footer-links ul {
 }
 footer .container .footer-top-part .footer-links ul .footer-link-title {
   color: #fff;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
@@ -1141,7 +1139,7 @@ footer .container .footer-top-part .footer-links ul .footer-link-title {
   text-align: left;
 }
 footer .container .footer-top-part .footer-links ul a {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 40px;
