@@ -51,13 +51,19 @@ $footer-background: #0e1021;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         gap: 30px;
         padding: 5px 5px;
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
 
         .contact-content {
             padding: 40px 40px;
             border: 1px solid #E5E5E5;
             display: flex;
+            width: 100%;
 
             .icon {
                 display: inline-block;
@@ -99,7 +105,10 @@ $footer-background: #0e1021;
 .contact-form {
     background-color: $primary-background;
     padding: 90px 40px;
-    margin: 90px;
+
+    @media (min-width: 768px) {
+        margin: 90px;
+    }
 
     h2 {
         font-family: "DM Sans";
@@ -115,6 +124,7 @@ $footer-background: #0e1021;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1021px;
 
         input {
             border-radius: 25px;
@@ -151,7 +161,11 @@ $footer-background: #0e1021;
 .map {
     iframe {
         width: 100%;
-        height: 620px;
+        height: 400px;
+
+        @media (min-width: 992px) {
+            height: 620px;
+        }
     }
 }
 
