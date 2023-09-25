@@ -621,11 +621,6 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
   }
 }
 
-.project-section .container {
-  max-width: 1320px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .project-section .container .section-title {
   text-align: center;
 }

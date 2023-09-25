@@ -7,7 +7,6 @@ $secondary-color: #6c757d;
 $primary-background: #F0EFE9;
 $black: #000;
 $white: #fff;
-$hover-color: #0069d9;
 $footer-background: #0e1021;
 
 * { 
@@ -695,9 +694,6 @@ header {
 // project and case studies section
 .project-section {
     .container {
-        max-width: 1320px;
-        margin-right: auto;
-        margin-left: auto;
 
         .section-title {
             text-align: center;
