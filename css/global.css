@@ -1,5 +1,5 @@
 /* global.scss */
-.primary-button {
+.btn-yellow {
   background-color: #f9d783;
   border: 1px solid #f9d783;
   color: #000;
@@ -9,17 +9,17 @@
   font-size: 16px;
   border-radius: 25px;
 }
-.primary-button i {
+.btn-yellow i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-.primary-button:hover {
+.btn-yellow:hover {
   background-color: #000;
   border: 1px solid #000;
   color: #f9d783;
 }
 
-.secondary-button {
+.btn-transparent {
   background-color: transparent;
   border: 1px solid #000;
   color: #000;
@@ -29,11 +29,11 @@
   font-weight: 600;
   font-size: 16px;
 }
-.secondary-button i {
+.btn-transparent i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-.secondary-button:hover {
+.btn-transparent:hover {
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
