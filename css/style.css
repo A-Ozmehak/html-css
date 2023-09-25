@@ -26,6 +26,10 @@ header .header-container .hamburger-btn {
   background-color: transparent;
   font-size: 25px;
 }
+header .header-container .hamburger-btn:hover {
+  cursor: pointer;
+  color: #f9d783;
+}
 @media (min-width: 992px) {
   header .header-container .hamburger-btn {
     display: none;
@@ -69,6 +73,9 @@ header .header-container .menu .top-menu .contact-information .contact-box.last 
 }
 header .header-container .menu .top-menu .contact-information .contact-box i {
   margin-right: 5px;
+}
+header .header-container .menu .top-menu .social-media a:hover {
+  color: #f9d783;
 }
 header .header-container .menu .main-menu {
   display: flex;
@@ -462,7 +469,7 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 .our-services-section .container .services .content:hover {
   background-color: #f9d783;
 }
-.our-services-section .container .services .content:hover button {
+.our-services-section .container .services .content:hover a {
   background-color: #fff;
   color: #000;
 }
@@ -667,8 +674,11 @@ header .header-container .menu .main-menu nav a.active::after, header .header-co
 .project-section .container .project-and-cases a .read-more i {
   margin-left: 3px;
 }
-.project-section .container .project-and-cases a:hover .readmore {
+.project-section .container .project-and-cases a:hover .read-more {
   text-decoration: underline;
+}
+.project-section .container .project-and-cases a:hover h3 {
+  font-size: 25px;
 }
 .project-section .container .center-content {
   margin-top: 50px;
@@ -1098,6 +1108,9 @@ footer .container .footer-top-part {
     width: 30%;
   }
 }
+footer .container .footer-top-part .footer-description img {
+  padding-bottom: 20px;
+}
 footer .container .footer-top-part .footer-description p {
   font-family: "Inter";
   font-size: 16px;
@@ -1140,6 +1153,9 @@ footer .container .footer-top-part .footer-links ul a {
   font-style: normal;
   text-align: left;
   color: rgba(255, 255, 255, 0.7);
+}
+footer .container .footer-top-part .footer-links ul a:hover {
+  color: #f9d783;
 }
 footer .container .footer-bottom-part {
   display: flex;

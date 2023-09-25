@@ -36,6 +36,11 @@ header {
             border: none;
             background-color: transparent;
             font-size: 25px;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary-color;
+            }
     
             @media (min-width:992px) {
                  display: none;
@@ -78,6 +83,14 @@ header {
 
                         i {
                             margin-right: 5px;
+                        }
+                    }
+                }
+
+                .social-media {
+                    a {
+                        &:hover {
+                            color: $primary-color;
                         }
                     }
                 }
@@ -509,7 +522,7 @@ header {
                     background-color: $primary-color;
                 }
     
-                &:hover button {
+                &:hover a {
                     background-color: $white;
                     color: $black;
                 }
@@ -741,9 +754,13 @@ header {
                     }   
                 }
 
-                &:hover .readmore {
+                &:hover .read-more {
                     text-decoration: underline;
                 } 
+
+                &:hover h3 {
+                    font-size: 25px;
+                }
             }
         }
 
@@ -1219,6 +1236,10 @@ footer {
                 @media (min-width: 1200px) {
                     width: 30%;
                 }
+
+                img {
+                    padding-bottom: 20px;
+                }
     
                 p {
                     font-family: "Inter";
@@ -1264,6 +1285,10 @@ footer {
                         font-style: normal;
                         text-align: left;
                         color: rgba(255,255,255,0.7 );
+
+                        &:hover {
+                            color: $primary-color;
+                        }
                     }
                 }
             }
