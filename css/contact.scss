@@ -15,17 +15,18 @@ $footer-text-color: rgba(255,255,255,0.7 );
 $font-inter: "Inter", sans-serif;
 $font-dm-sans: "DM Sans", sans-serif;
 
-.title {
+// title section
+.title-section {
     background-color: $primary-background;
     position: relative;
-    z-index: 0;
+    // z-index: 0;
     padding-bottom: 50px;
 
     .lines {
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: -1;
+        // z-index: -1;
     }
 
     .breadcrumbs {
@@ -56,7 +57,10 @@ $font-dm-sans: "DM Sans", sans-serif;
     }
 }
 
+// contact information
 .contact-information-boxes {
+    padding: 90px 0 70px 0;
+
     .container {
         display: flex;
         justify-content: center;
@@ -112,12 +116,13 @@ $font-dm-sans: "DM Sans", sans-serif;
     }
 }
 
+// contact form
 .contact-form {
     background-color: $primary-background;
-    margin: 30px 0;
+    margin: 0 30px 30px 30px;
 
     @media (min-width: 768px) {
-        margin: 90px;
+        margin: 0 90px 90px 90px;
     }
     
     .container {
@@ -186,6 +191,7 @@ $font-dm-sans: "DM Sans", sans-serif;
     }
 }
 
+// map
 .map {
     height: 400px;
 
@@ -195,112 +201,5 @@ $font-dm-sans: "DM Sans", sans-serif;
     iframe {
         width: 100%;
         height: 100%;
-    }
-}
-
-footer {
-    background-color: $footer-background;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        color: $white;
-        padding: 2rem 2rem;
-
-        .footer-top-part {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 1rem;
-
-            @media (min-width: 1200px) {
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 1rem;
-            }
-
-            .footer-description {
-                @media (min-width: 1200px) {
-                    width: 30%;
-                }
-
-                img {
-                    padding-bottom: 20px;
-                }
-    
-                p {
-                    font-family: $font-inter;
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 26px;
-                    font-style: normal;
-                    text-align: left;
-                    color: $footer-text-color;
-                }
-            }
-    
-            .footer-links {
-                display: flex;
-                flex-direction: column;
-    
-                @media (min-width: 576px) {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-    
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-    
-                    .footer-link-title {
-                        color: $white;
-                        font-family: $font-dm-sans;
-                        font-size: 22px;
-                        font-weight: bold;
-                        line-height: 33px;
-                        font-style: normal;
-                        text-align: left;
-                    }
-    
-                    a {
-                        font-family: $font-inter;
-                        font-size: 16px;
-                        font-weight: 500;
-                        line-height: 40px;
-                        font-style: normal;
-                        text-align: left;
-                        color: $footer-text-color;
-
-                        &:hover {
-                            color: $primary-color;
-                        }
-                    }
-                }
-            }
-        }
-   
-        .footer-bottom-part {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 1rem;
-
-            @media (min-width: 1200px) {
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 1rem;
-            }
-
-            .footer-icons {
-                display: flex;
-                flex-direction: row;
-            }
-        }
     }
 }
