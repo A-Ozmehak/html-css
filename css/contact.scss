@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap');
 
+//colors
 $primary-color: #f9d783;
 $secondary-color: #6c757d;
 $primary-background: #F0EFE9;
@@ -10,6 +11,7 @@ $light-border: #E5E5E5;
 $footer-background: #0e1021;
 $footer-text-color: rgba(255,255,255,0.7 );
 
+//fonts
 $font-inter: "Inter", sans-serif;
 $font-dm-sans: "DM Sans", sans-serif;
 
@@ -112,68 +114,87 @@ $font-dm-sans: "DM Sans", sans-serif;
 
 .contact-form {
     background-color: $primary-background;
-    padding: 90px 40px;
+    margin: 30px 0;
 
     @media (min-width: 768px) {
         margin: 90px;
     }
-
-    h2 {
-        font-family: $font-dm-sans;
-        font-size: 45px;
-        font-weight: bold;
-        line-height: 55px;
-        font-style: normal;
-        text-align: center;
-        color: $black;
-    }
-
-    form {
+    
+    .container {
+        padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1021px;
-
-        input {
-            border-radius: 25px;
-            padding: 15px 30px;
-            color: $black;
-            text-decoration: none;
-            font-size: 16px;
-            outline: none;
-            border: 1px solid rgba(25, 25, 25, 0.10);
-            width: 100%;
-            margin-bottom: 10px;
-        }
-    
-        textarea {
-            border-radius: 25px;
-            padding: 15px 30px;
-            color: $black;
-            text-decoration: none;
-            font-size: 16px;
-            outline: none;
-            border: 1px solid rgba(25, 25, 25, 0.10);
-            width: 100%;
-            margin-bottom: 30px;
-            height: 160px;
+        @media (min-width: 768px) {
+            padding: 90px;
         }
 
-        a {
+        h2 {
+            font-family: $font-dm-sans;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 55px;
+            font-style: normal;
+            text-align: center;
+            color: $black;
+            padding-bottom: 30px;
             width: 100%;
             text-align: center;
+
+            @media (min-width: 768px) {
+                width: 450px;
+            }
         }
-    }  
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1021px;
+            width: 100%;
+    
+            input {
+                border-radius: 25px;
+                padding: 15px 30px;
+                color: $black;
+                text-decoration: none;
+                font-size: 16px;
+                outline: none;
+                border: 1px solid rgba(25, 25, 25, 0.10);
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        
+            textarea {
+                border-radius: 25px;
+                padding: 15px 30px;
+                color: $black;
+                text-decoration: none;
+                font-size: 16px;
+                outline: none;
+                border: 1px solid rgba(25, 25, 25, 0.10);
+                width: 100%;
+                margin-bottom: 30px;
+                height: 160px;
+            }
+    
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        } 
+    }
 }
 
 .map {
+    height: 400px;
+
+    @media (min-width: 992px) {
+        height: 620px;
+    }
     iframe {
         width: 100%;
-        height: 400px;
-
-        @media (min-width: 992px) {
-            height: 620px;
-        }
+        height: 100%;
     }
 }
 
