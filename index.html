@@ -18,7 +18,7 @@
         <header>
             <div class="container">
                 <div class="header-container">
-                    <a href="index.html"><img src="/img/Logo.svg" alt="the logo for the company Crito"></a>
+                    <a class="logo" href="index.html"><img src="/img/Logo.svg" alt="the logo for the company Crito"></a>
                     <a class="hamburger-btn"><i class="fa-solid fa-bars"></i></a>
                     <div class="menu">
                         <div class="top-menu">
@@ -50,7 +50,7 @@
                                 <a href="news.html">News</a>
                                 <a href="contact.html">Contact</a>
                             </nav>
-                            <a class="btn-yellow">Login<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
+                            <a class="btn-transparent">Login<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
                         </div>
                     </div>  
                 </div> 
@@ -59,7 +59,9 @@
         <main>
             <!-- showcase -->
             <section class="showcase-section">
-                    <img src="img/background-lines-showcase.svg" alt="lines in the background" class="lines">
+                <div class="lines">
+                    <img src="img/background-lines-showcase.svg" alt="lines in the background" >
+                </div>
                 <div class="container">
                     <div class="showcase-left">
                             <h1>We provide The Best business solutions</h1>
@@ -74,11 +76,11 @@
             <!-- logos -->
             <section class="logos-container">
                 <div class="container">
-                    <img src="/img/Logo(1).svg" alt="the company paperz's logo">
-                    <img src="/img/Logo(2).svg" alt="the company dorfus's logo">
-                    <img src="/img/Logo(3).svg" alt="the company martino's logo">
-                    <img src="/img/Logo(4).svg" alt="the company square's logo">
-                    <img src="/img/Logo(5).svg" alt="the company gobona's logo">
+                    <img src="/img/paperz.svg" alt="the company paperz's logo">
+                    <img src="/img/dorfus.svg" alt="the company dorfus's logo">
+                    <img src="/img/martino.svg" alt="the company martino's logo">
+                    <img src="/img/square.svg" alt="the company square's logo">
+                    <img src="/img/gobona.svg" alt="the company gobona's logo">
                 </div>
             </section>
 
@@ -135,7 +137,8 @@
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="/img/about.png" alt="a smiling company woman with a computer in her hand">
+                        <img src="img/company-line.svg" alt="white line on top of the image" class="lines">
+                        <img class="company-img" src="/img/about.png" alt="a smiling company woman with a computer in her hand">
                         <div class="quote-box">
                             <p>Samantha Brown,<span>Founder</span></p>
                             <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
@@ -146,7 +149,9 @@
 
             <!-- our services section -->
             <section class="our-services-section">
-                <img src="img/lines.svg" alt="lines in the background" class="background-lines-right">
+                <div class="lines-box">
+                    <img src="img/LinesService.svg" alt="lines in the background" class="background-lines-right">
+                </div>
                 <div class="container">
                     <div class="section-title">
                         <p>Our Services</p>
@@ -157,25 +162,33 @@
                             <div class="black-line"></div>
                             <h3 class="service-title">Business Advice</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <a><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="rounded-border-arrow">
+                                <a><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                         <div class="content">
                             <div class="black-line"></div>
                             <h3 class="service-title">Startup Business</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <a><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="rounded-border-arrow">
+                                <a><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                         <div class="content">
                             <div class="black-line"></div>
                             <h3 class="service-title">Financial Advice</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <a><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="rounded-border-arrow">
+                                <a><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                         <div class="content">
                             <div class="black-line"></div>
                             <h3 class="service-title">Risk Management</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                            <a><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="rounded-border-arrow">
+                                <a><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="button-container">
@@ -306,6 +319,13 @@
                             <h3>Justin Willoman</h3>
                             <p>Senior Tech Consultant</p>
                         </div>
+                    </div>
+                    <div class="dots">
+                        <img class="grey-dot" src="img/dot.svg" alt="pagination dots" />
+                        <img src="img/dot.svg" alt="pagination dots" />
+                        <img class="grey-dot" src="img/dot.svg" alt="pagination dots" />
+                        <img class="grey-dot" src="img/dot.svg" alt="pagination dots" />
+                        <img class="grey-dot" src="img/dot.svg" alt="pagination dots" />
                     </div>
 
                     <!-- testimonals -->
