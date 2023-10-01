@@ -87,7 +87,12 @@
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
+}
+@media (min-width: 1200px) {
+  .section-title h2 {
+    font-size: 45px;
+  }
 }
 
 .center-content {
@@ -215,7 +220,7 @@ footer {
 footer .background-lines {
   opacity: 0.4;
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   right: 0;
   z-index: -1;
   width: 614px;
@@ -241,6 +246,9 @@ footer .background-lines {
   footer .background-lines {
     bottom: 50px;
   }
+}
+footer .background-lines img {
+  width: 100%;
 }
 footer .container {
   display: flex;

@@ -37,17 +37,11 @@ body {
     .lines {
         position: absolute;
         height: 215px;
-        max-width: 955px;
+        width: 100%;
         bottom: 0;
         left: -250px;
         z-index: -1;
         overflow: hidden;
-
-        @media (min-width: 1200px) {
-            width: 955px;
-
-        }
-        
     }
  
     .container {
@@ -114,6 +108,8 @@ body {
        display: flex;
        justify-content: space-between;
        flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
     }
 }
 
@@ -121,15 +117,17 @@ body {
 .features-section {
     border: 1px solid rgba(25,25,25,0.2);
     border-radius: 2px;
-    padding: 5rem 5rem;
-    margin: 0 80px;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 2rem;
+    margin: 0 10px;
 
     @media (min-width: 1200px) {
         flex-direction: row;
+        padding: 5rem 5rem;
+        margin: 0 80px;
     }
 
     .container {
@@ -142,7 +140,7 @@ body {
             }
 
         .section-title {
-            width: 460px;
+            width: 100%;
 
             @media (min-width: 768px) {
                 padding-top: 0;
@@ -150,10 +148,6 @@ body {
 
             h2 {
                 margin-bottom: 2rem;
-    
-                @media (min-width: 1200px) {
-                    font-size: 45px;
-                }
             }
     
             .btn {
@@ -202,7 +196,6 @@ body {
 // about company section
 .about-company-section {
     .container {
-        margin-bottom: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -215,6 +208,7 @@ body {
             padding: 0 2rem;
     
             .section-title {
+                padding-top: 0;
                 h2 {
                     margin-top: 2rem;
                 }
@@ -283,11 +277,17 @@ body {
             width: 100%;
             position: relative;
             z-index: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            // height: 500px;
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
+                margin-top: 220px;
             }
 
             .lines {
@@ -326,6 +326,7 @@ body {
 
                 @media (min-width: 768px) {
                     width: 533px;
+                    height: 615px;
                 }
             }
 
@@ -405,16 +406,20 @@ body {
 
     .lines-box {
         overflow: hidden;
-        width: 920px;
-        height: 155px;
-        padding-top: 50px;
+        width: 100%;
+        height: 215px;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: -160px;
+        bottom: -110px;
+
+        @media (min-width: 750px) {
+            max-width: 920px;
+            right: 0;
+            bottom: 0;
+        }
 
         img {
-            width: 920px;
-            overflow: hidden;
+            width: 100%;
         }
     }
 
@@ -531,7 +536,7 @@ body {
 
 // why choose us section
 .choose-us-section {
-    .containers {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -762,12 +767,7 @@ body {
                 }
 
                 h2 {
-                    font-size: 30px;
                     padding: 1rem 0;
-    
-                    @media (min-width: 992px) {
-                       font-size: 40px;
-                    }
                 }
             }
     
@@ -858,11 +858,11 @@ body {
             .section-title {
                 display: flex;
                 flex-direction: column;
+                text-align: center;
                 padding-bottom: 40px;
 
                 h2 {
                     margin-bottom: 3rem;
-                    margin-top: 3rem;
                 }
             }
 
@@ -1106,9 +1106,13 @@ body {
 
     .background-lines-right {
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         right: 0;
         opacity: 0.40;
+
+        @media (min-width: 1200px) {
+            bottom: 50px;
+        }
     }
 
     .container {

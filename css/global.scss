@@ -117,7 +117,11 @@ $font-dm-sans: "DM Sans", sans-serif;
         color: $black;
         font-family: $font-dm-sans;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 35px;
+
+        @media (min-width: 1200px) {
+            font-size: 45px;
+        }
       }
 }
 
@@ -266,7 +270,7 @@ footer {
     .background-lines {
         opacity: 0.40;
         position: absolute;
-        bottom: 100px;
+        bottom: 80px;
         right: 0;
         z-index: -1;
         width: 614px;
@@ -287,6 +291,10 @@ footer {
 
         @media (min-width: 1200px) {
             bottom: 50px;
+        }
+
+        img {
+            width: 100%;
         }
     }
 
