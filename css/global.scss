@@ -266,11 +266,11 @@ footer {
     .background-lines {
         opacity: 0.40;
         position: absolute;
-        bottom: 0;
+        bottom: 50px;
         right: 0;
         z-index: -1;
         width: 614px;
-        height: 150px;
+        height: 100px;
         overflow: hidden;
     }
 
@@ -387,20 +387,25 @@ footer {
                 padding: 0 2rem;
             }
             
-
             p {
                 color: $footer-text-color;
             }
     
-            ul {
+            .social-media {
                 display: flex;
                 flex-direction: row;
     
-                li {
+                a {
                     margin-right: 20px;
+
+                    &:hover i {
+                        color: $primary-color;
+                    }
 
                     i {
                         color: $white;
+
+                       
                     }
                 }
             }

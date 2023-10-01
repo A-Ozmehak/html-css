@@ -215,11 +215,11 @@ footer {
 footer .background-lines {
   opacity: 0.4;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   z-index: -1;
   width: 614px;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
 }
 footer .container {
@@ -332,13 +332,16 @@ footer .footer-bottom-part .content {
 footer .footer-bottom-part .content p {
   color: rgba(255, 255, 255, 0.7);
 }
-footer .footer-bottom-part .content ul {
+footer .footer-bottom-part .content .social-media {
   display: flex;
   flex-direction: row;
 }
-footer .footer-bottom-part .content ul li {
+footer .footer-bottom-part .content .social-media a {
   margin-right: 20px;
 }
-footer .footer-bottom-part .content ul li i {
+footer .footer-bottom-part .content .social-media a:hover i {
+  color: #f9d783;
+}
+footer .footer-bottom-part .content .social-media a i {
   color: #fff;
 }/*# sourceMappingURL=global.css.map */
