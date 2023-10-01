@@ -218,6 +218,9 @@ footer .background-lines {
   bottom: 0;
   right: 0;
   z-index: -1;
+  width: 614px;
+  height: 150px;
+  overflow: hidden;
 }
 footer .container {
   display: flex;
