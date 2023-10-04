@@ -83,14 +83,13 @@ $font-dm-sans: "DM Sans", sans-serif;
     padding: 15px 30px;
     font-weight: normal;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: 0.3s;
 
 
     i {
         margin-left: 8px;
         font-size: 15px;
-        // color: $white;
     }
 
     &:hover {
@@ -159,10 +158,6 @@ header {
         justify-content: space-between;
         gap: 70px;
 
-        .logo {
-            padding-bottom: 50px;
-        }
-
         .hamburger-btn {
             border: none;
             background-color: transparent;
@@ -190,7 +185,7 @@ header {
                 display: flex;
                 justify-content: flex-end;
                 border-bottom: 1px solid $border;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
 
                 @media (min-width: 1200px) {
                     justify-content: space-between;
@@ -230,7 +225,8 @@ header {
         .main-menu {
             display: flex;
             justify-content: space-between;
-            margin-top: 35px;
+            align-items: center;
+            margin-top: 25px;
 
             nav {
                 a {
@@ -282,10 +278,6 @@ footer {
 
         @media (min-width: 576px) {
             bottom: 121px;
-        }
-
-        @media (min-width: 768px) {
-            // bottom: 120px;
         }
 
         @media (min-width: 996px) {
@@ -340,17 +332,23 @@ footer {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                margin-top: 20px;
     
                 @media (min-width: 576px) {
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-around;
+                    margin-top: 0;
                 }
     
                 ul {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+
+                    @media (min-width: 576px) {
+                        align-items: flex-start;
+                    }
     
                     .footer-link-title {
                         color: $white;

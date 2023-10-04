@@ -41,7 +41,6 @@ body {
         bottom: 0;
         left: 0;
         z-index: -1;
-        // overflow: hidden;
 
         img {
             width: 100%;
@@ -73,7 +72,7 @@ body {
                 }
     
                  @media (min-width: 1400px) {
-                    font-size: 86px;
+                    font-size: 96px;
                 }
             }
             
@@ -137,10 +136,10 @@ body {
     .container {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 30px;
 
             @media (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
+                gap: 80px;
             }
 
         .section-title {
@@ -152,6 +151,10 @@ body {
 
             h2 {
                 margin-bottom: 2rem;
+
+                @media (min-width: 1200px) {
+                    width: 460px;
+                }
             }
     
             .btn {
@@ -199,27 +202,33 @@ body {
 
 // about company section
 .about-company-section {
+    margin-top: 120px;
+
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
     
         @media (min-width: 1200px) {
                 flex-direction: row-reverse;
         }
 
         .text-container {
-            padding: 0 2rem;
+            padding: 0 32px;
     
             .section-title {
                 padding-top: 0;
+
+                @media (min-width: 768px) {
+                    padding-bottom: 20px;
+                }
+
                 h2 {
-                    margin-top: 2rem;
+                    margin-top: 32px;
                 }
             }
     
             .buttons-container {
-                margin-top: 5rem;
+                margin-top: 80px;
     
                 @media (min-width: 768px) {
                     display: flex;
@@ -231,13 +240,13 @@ body {
                 }
         
                 .video-btn-container {
-                    margin: 2rem 0;
+                    margin: 32px 0;
                     display: flex;
                     align-items: center;
     
                     @media (min-width: 768px) {
                         margin-top: 0;
-                        margin-left: 3rem;
+                        margin-left: 48px;
                     }
     
                     .play-btn {
@@ -290,7 +299,6 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin-top: 220px;
             }
 
             .lines {
@@ -423,6 +431,10 @@ body {
             flex-direction: column;
             align-items: center;
 
+            @media (min-width: 768px) {
+                padding-bottom: 40px;
+            }
+
             @media (min-width: 1200px ) {
                     align-items: start;
                     width: 520px;
@@ -497,7 +509,6 @@ body {
                         padding: 17px 19px;
                         border-radius: 30px;
                        
-    
                         i {
                             font-size: 20px;
                         }
@@ -526,16 +537,37 @@ body {
 
 // why choose us section
 .choose-us-section {
+    margin-top: 30px;
+    position: relative;
+
+    @media (min-width: 1200px) {
+        margin-top: 60px;
+    }
+
+    .img-bg {
+        display: none;
+        height: 425px;
+        background-color: $primary-background;
+        position: absolute;
+
+        @media (min-width: 1200px) {
+            width: 700px;
+            display: block;
+            bottom: 30px;
+            right: 0;
+            z-index: -1;
+        }
+
+        @media (min-width: 1400px) {
+            width: 1000px;
+        }
+    }
+
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: 2rem;
-        gap: 20px;
-        max-width: 1620px;
-        margin-left: auto;
-        margin-right: auto;
 
         @media (min-width: 1200px) {
             flex-direction: row;
@@ -547,19 +579,28 @@ body {
         }
 
         .text-content {
+            max-width: 447px;
+            padding-bottom: 40px;
+
+            @media (min-width: 1200px) {
+                padding-bottom: 0;
+            }
+
             .section-title {
                 padding-top: 40px;
                 padding-bottom: 40px;
                 @media (min-width: 1200px) {
-                    padding-bottom: 70px;
+                    padding-bottom: 40px;
                     padding-top: 0;
                 }
             }
 
             .content {
                 display: flex;
+                align-items: center;
                
                 .icon {
+                    margin-bottom: 10px;
                     i {
                         margin-top: 2rem;
                         font-size: 30px;
@@ -602,47 +643,24 @@ body {
         .img-content {
            @media (min-width: 1200px) {
             position: relative;
-            top: 220px;
             right: 0;
+            height: 603px;
            }
 
             img {
                 width: 100%;
-                padding-top: 50px;
                 position: relative;
                 
-
                 @media (min-width: 1200px) {
                     width: 500px;
                     height: 505px;
                     padding-top: 0;
-
-                    top: -60px;
-                    left: 100px;
+                    top: 10px;
+                    left: -10px;
                 }
 
                 @media (min-width: 1400px) {
                     width: 645px;
-                }
-            }
-        
-            .img-bg {
-                display: none;
-                height: 425px;
-                background-color: $primary-background;
-        
-                @media (min-width: 1200px) {
-                    width: 700px;
-                    display: block;
-                    position: relative;
-                    bottom: 360px;
-                    right: 0;
-                    z-index: -1;
-                }
-
-                @media (min-width: 1400px) {
-                    width: 1000px;
-                    // width: 100%;
                 }
             }
         }
@@ -656,7 +674,6 @@ body {
         .section-title {
             text-align: center;
 
-            // ändrar inte mellanrummet? ändra h2 top istället?
             p {
                 margin-bottom: 10px; 
             }
@@ -728,7 +745,7 @@ body {
 // meet our team section
 .team-section {
     background-color: $primary-color;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 
     .container {
         .section-title {
@@ -838,7 +855,7 @@ body {
                 border-radius: 10px;
                 background-color: $black;
                 padding: 5px;
-                margin-right: 10px;
+                margin-right: 15px;
             }
             .grey-dot {
                 opacity: 0.20;
@@ -946,7 +963,7 @@ body {
 }
 
 // article and news section
-.blog-section {
+.news-section {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -987,10 +1004,6 @@ body {
                     @media (min-width: 1200px) {
                         margin-bottom: 0;
                     }
-            
-                    &:hover {
-                        background-color: $primary-color;
-                    }
                 }
             }
         }
@@ -1011,7 +1024,7 @@ body {
                 grid-template-columns: 1fr 1fr 1fr;
             }
     
-            .blog-content {
+            .news-content {
                 display: flex;
                 flex-direction: column;
     
@@ -1084,7 +1097,7 @@ body {
                 border-radius: 10px;
                 background-color: $black;
                 padding: 5px;
-                margin-right: 10px;
+                margin-right: 15px;
             }
           
             .grey-dot {
@@ -1136,9 +1149,11 @@ body {
             font-style: normal;
             text-align: left;
             color: $black;
+            padding-bottom: 20px;
     
             @media (min-width: 1200px) {
                 font-size: 45px;
+                padding-bottom: 0;
             }
         }
 
@@ -1167,7 +1182,10 @@ body {
                 font-size: 16px;
                 outline: none;
                 border: 1px solid rgba(25, 25, 25, 0.10);
-                margin-right: 20px;
+
+                @media (min-width: 1200px) {
+                    margin-right: 20px;
+                }
             }
         
             a {
