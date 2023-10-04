@@ -266,6 +266,7 @@ footer {
     background-color: $footer-background;
     position: relative;
     z-index: 0;
+    padding-top: 80px;
 
     .background-lines {
         opacity: 0.40;
@@ -275,21 +276,21 @@ footer {
         z-index: -1;
         overflow: hidden;
 
+        @media (min-width: 511px) {
+            bottom: 121px;
+        }
+
         @media (min-width: 576px) {
-            bottom: 105px;
+            bottom: 121px;
         }
 
         @media (min-width: 768px) {
-            bottom: 81px;
+            // bottom: 120px;
         }
 
         @media (min-width: 996px) {
-            bottom: 57px;
+            bottom: 97px;
         }
-
-        // @media (min-width: 1200px) {
-        //     bottom: 57px;
-        // }
 
         img {
             width: 100%;
@@ -307,6 +308,7 @@ footer {
             flex-direction: column;
             align-items: center;
             margin-top: 1rem;
+            padding-bottom: 60px;
 
             @media (min-width: 1200px) {
                 flex-direction: row;
@@ -335,23 +337,20 @@ footer {
             }
     
             .footer-links {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
     
                 @media (min-width: 576px) {
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    justify-content: space-around;
                 }
     
                 ul {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-
-                    @media (min-width: 1400px) {
-                        margin-right: 20px;
-                    }
+                    align-items: center;
     
                     .footer-link-title {
                         color: $white;
@@ -394,31 +393,13 @@ footer {
             margin-top: 1rem;
             padding: 20px 0;
 
-            @media (min-width: 576px) {
-                padding: 0 5rem;
-            }
-
             @media (min-width: 996px) {
                 flex-direction: row;
                 justify-content: space-between;
             }
-
-            @media (min-width: 1200px) {
-                padding: 0 4rem;
-                
-            }
-
-            @media (min-width: 1400px) {
-                padding: 0 2rem;
-            }
             
             p {
                 color: $footer-text-color;
-                width: 80%;
-
-                @media (min-width: 576px) {
-                    width: 100%;
-                }
             }
     
             .social-media {
