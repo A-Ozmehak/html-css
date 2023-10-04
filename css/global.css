@@ -220,10 +220,25 @@ footer {
 footer .background-lines {
   opacity: 0.4;
   position: absolute;
-  bottom: 0;
+  bottom: 145px;
   right: 0;
   z-index: -1;
   overflow: hidden;
+}
+@media (min-width: 576px) {
+  footer .background-lines {
+    bottom: 105px;
+  }
+}
+@media (min-width: 768px) {
+  footer .background-lines {
+    bottom: 81px;
+  }
+}
+@media (min-width: 996px) {
+  footer .background-lines {
+    bottom: 57px;
+  }
 }
 footer .background-lines img {
   width: 100%;
@@ -309,50 +324,57 @@ footer .container .footer-top-part .footer-links ul a {
 footer .container .footer-top-part .footer-links ul a:hover {
   color: #f9d783;
 }
-footer .footer-bottom-part {
+footer .footer-border-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-footer .footer-bottom-part .content {
+footer .container .footer-bottom-part {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 1rem;
-  max-width: 1320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 1rem;
+  padding: 20px 0;
 }
 @media (min-width: 576px) {
-  footer .footer-bottom-part .content {
+  footer .container .footer-bottom-part {
     padding: 0 5rem;
   }
 }
-@media (min-width: 1200px) {
-  footer .footer-bottom-part .content {
-    padding: 0 4rem;
+@media (min-width: 996px) {
+  footer .container .footer-bottom-part {
     flex-direction: row;
     justify-content: space-between;
   }
 }
+@media (min-width: 1200px) {
+  footer .container .footer-bottom-part {
+    padding: 0 4rem;
+  }
+}
 @media (min-width: 1400px) {
-  footer .footer-bottom-part .content {
+  footer .container .footer-bottom-part {
     padding: 0 2rem;
   }
 }
-footer .footer-bottom-part .content p {
+footer .container .footer-bottom-part p {
   color: rgba(255, 255, 255, 0.7);
+  width: 80%;
 }
-footer .footer-bottom-part .content .social-media {
+@media (min-width: 576px) {
+  footer .container .footer-bottom-part p {
+    width: 100%;
+  }
+}
+footer .container .footer-bottom-part .social-media {
   display: flex;
   flex-direction: row;
 }
-footer .footer-bottom-part .content .social-media a {
+footer .container .footer-bottom-part .social-media a {
   margin-right: 20px;
 }
-footer .footer-bottom-part .content .social-media a:hover i {
+footer .container .footer-bottom-part .social-media a:hover i {
   color: #f9d783;
 }
-footer .footer-bottom-part .content .social-media a i {
+footer .container .footer-bottom-part .social-media a i {
   color: #fff;
 }/*# sourceMappingURL=global.css.map */
