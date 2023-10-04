@@ -3,12 +3,20 @@
 .title-section {
   background-color: #F0EFE9;
   position: relative;
+  height: 300px;
+  z-index: 0;
+  overflow: hidden;
   padding-bottom: 50px;
+  padding-top: 90px;
 }
 .title-section .lines {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -1;
+}
+.title-section .lines img {
+  width: 100%;
 }
 .title-section .breadcrumbs {
   display: flex;
@@ -64,7 +72,7 @@
   background-color: #191919;
   border: 1px solid #191919;
   border-radius: 35px;
-  margin-right: 1rem;
+  margin-right: 16px;
   padding: 12px;
   font-size: 16px;
   text-align: center;
@@ -87,6 +95,7 @@
   font-style: normal;
   text-align: left;
   color: rgba(25, 25, 25, 0.8);
+  margin-bottom: 0;
 }
 
 .contact-form {
@@ -153,7 +162,7 @@
   outline: none;
   border: 1px solid rgba(25, 25, 25, 0.1);
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   height: 160px;
 }
 .contact-form .container form a {
