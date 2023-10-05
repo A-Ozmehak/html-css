@@ -33,7 +33,7 @@ $font-dm-sans: "DM Sans", sans-serif;
     padding: 12px 30px;
     font-size: 16px;
     border-radius: 25px;
-    transition: 0.3s;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -58,7 +58,7 @@ $font-dm-sans: "DM Sans", sans-serif;
     padding: 12px 30px;
     font-weight: normal;
     font-size: 16px;
-    transition: 0.3s;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
 
     i {
@@ -84,7 +84,7 @@ $font-dm-sans: "DM Sans", sans-serif;
     font-weight: normal;
     font-size: 16px;
     border-radius: 30px;
-    transition: 0.3s;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
 
     i {
@@ -162,7 +162,7 @@ header {
             border: none;
             background-color: transparent;
             font-size: 25px;
-
+            transition: color 0.25s ease-in-out;
             &:hover {
                 cursor: pointer;
                 color: $primary-color;
@@ -215,6 +215,7 @@ header {
 
                 .social-media {
                     a {
+                        transition: color 0.25s ease-in-out;
                         &:hover {
                             color: $primary-color;
                         }
@@ -369,6 +370,7 @@ footer {
                         font-style: normal;
                         text-align: left;
                         color: $footer-text-color;
+                        transition: color 0.25s ease-in-out;
 
                         &:hover {
                             color: $primary-color;
@@ -413,8 +415,7 @@ footer {
 
                     i {
                         color: $white;
-
-                       
+                        transition: color 0.2s ease-in-out;
                     }
                 }
             }

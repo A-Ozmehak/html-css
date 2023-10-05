@@ -265,6 +265,7 @@ body {
                         margin-right: 16px;
                         padding: 12px;
                         font-size: 16px;
+                        transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
                         i {
                             font-size: 12px;
@@ -464,6 +465,7 @@ body {
                 padding: 32px;
                 margin-bottom: 32px;
                 position: relative;
+                transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
                 @media (min-width: 1400px) {
                     width: 308px;
@@ -675,7 +677,6 @@ body {
 // project and case studies section
 .project-section {
     .container {
-
         .section-title {
             text-align: center;
 
@@ -724,6 +725,7 @@ body {
                     text-decoration: none;
                     color: $black;
                     padding: 15px;
+                    transition: font-size 0.2s ease-in-out, text-decoration 0.25s ease-in-out;
                 
                     i {
                         margin-left: 3px;
@@ -735,7 +737,7 @@ body {
                 } 
 
                 &:hover h3 {
-                    font-size: 25px;
+                    font-size: 20px;
                 }
             }
         }

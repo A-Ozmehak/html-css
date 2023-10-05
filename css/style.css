@@ -237,6 +237,7 @@ body {
   margin-right: 16px;
   padding: 12px;
   font-size: 16px;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .about-company-section .container .text-container .buttons-container .video-btn-container .play-btn i {
   font-size: 12px;
@@ -429,6 +430,7 @@ body {
   padding: 32px;
   margin-bottom: 32px;
   position: relative;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 @media (min-width: 1400px) {
   .our-services-section .container .services .content {
@@ -667,6 +669,9 @@ body {
   text-decoration: none;
   color: #191919;
   padding: 15px;
+  transition: font-size 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: font-size 0.2s ease-in-out, text-decoration 0.25s ease-in-out;
+  transition: font-size 0.2s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
 }
 .project-section .container .project-and-cases a .read-more i {
   margin-left: 3px;
@@ -675,7 +680,7 @@ body {
   text-decoration: underline;
 }
 .project-section .container .project-and-cases a:hover h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
 .project-section .container .center-content {
   margin-top: 50px;

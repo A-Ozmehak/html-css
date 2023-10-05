@@ -12,7 +12,7 @@
   padding: 12px 30px;
   font-size: 16px;
   border-radius: 25px;
-  transition: 0.3s;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -35,7 +35,7 @@
   padding: 12px 30px;
   font-weight: normal;
   font-size: 16px;
-  transition: 0.3s;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -58,7 +58,7 @@
   font-weight: normal;
   font-size: 16px;
   border-radius: 30px;
-  transition: 0.3s;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-black i {
   margin-left: 8px;
@@ -132,6 +132,7 @@ header .header-container .hamburger-btn {
   border: none;
   background-color: transparent;
   font-size: 25px;
+  transition: color 0.25s ease-in-out;
 }
 header .header-container .hamburger-btn:hover {
   cursor: pointer;
@@ -180,6 +181,9 @@ header .header-container .menu .top-menu .contact-information .contact-box.last 
 }
 header .header-container .menu .top-menu .contact-information .contact-box i {
   margin-right: 5px;
+}
+header .header-container .menu .top-menu .social-media a {
+  transition: color 0.25s ease-in-out;
 }
 header .header-container .menu .top-menu .social-media a:hover {
   color: #f9d783;
@@ -323,6 +327,7 @@ footer .container .footer-top-part .footer-links ul a {
   font-style: normal;
   text-align: left;
   color: rgba(255, 255, 255, 0.7);
+  transition: color 0.25s ease-in-out;
 }
 footer .container .footer-top-part .footer-links ul a:hover {
   color: #f9d783;
@@ -359,4 +364,5 @@ footer .container .footer-bottom-part .social-media a:hover i {
 }
 footer .container .footer-bottom-part .social-media a i {
   color: #fff;
+  transition: color 0.2s ease-in-out;
 }/*# sourceMappingURL=global.css.map */

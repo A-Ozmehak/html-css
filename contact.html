@@ -109,11 +109,11 @@
         <section class="contact-form">
             <div class="container">
                 <h2>Leave us a message for any information.</h2>
-                <form>
-                    <input type="text" placeholder="Name*">
-                    <input type="text" placeholder="Email*">
-                    <textarea placeholder="Your Message*"></textarea>
-                    <a class="btn-yellow">Send Message<i class="fa-solid fa-arrow-up-right icon-left"></i></a>
+                <form method="post">
+                    <input id="name" type="text" placeholder="Name*" name="name" title="name" tabindex="1">
+                    <input id="email" type="email" placeholder="Email*" name="email" title="email" tabindex="2">
+                    <textarea class="textarea" id="message" placeholder="Your Message*" name="message"></textarea>
+                    <button type="submit" class="btn-yellow">Send Message<i class="fa-solid fa-arrow-up-right icon-left"></i></button>
                 </form>
             </div>
         </section>
