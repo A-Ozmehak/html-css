@@ -21,6 +21,8 @@ First school assignment in HTML & CSS.
 * All buttons have transition
 * All styling is made in SCSS
 
+Creator: [Anna Özmehak](https://github.com/A-Ozmehak)
+
 
 
 
