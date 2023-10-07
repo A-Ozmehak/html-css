@@ -588,6 +588,7 @@ body {
   font-style: normal;
   text-align: left;
   color: #191919;
+  margin-bottom: 0;
 }
 @media (min-width: 1200px) {
   .choose-us-section .container .text-content .content .text .list-title {
@@ -596,7 +597,7 @@ body {
 }
 @media (min-width: 1200px) {
   .choose-us-section .container .text-content .content .text .description {
-    margin-left: 23px;
+    margin-left: 16px;
   }
 }
 @media (min-width: 1200px) {

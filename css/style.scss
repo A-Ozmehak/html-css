@@ -632,6 +632,7 @@ body {
                         font-style: normal;
                         text-align: left;
                         color: $black;
+                        margin-bottom: 0;
         
                         @media (min-width: 1200px) {
                             margin-left: 16px;
@@ -640,7 +641,7 @@ body {
             
                     .description {
                         @media (min-width: 1200px) {
-                            margin-left: 23px;
+                            margin-left: 16px;
                         }
                     }
                 } 

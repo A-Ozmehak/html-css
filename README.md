@@ -2,7 +2,7 @@
 
 First school assignment in HTML & CSS.
 
-### Instruktions
+### Requirements
 * You are required to build all the components that are present on the homepage.
 * There should be a good code structure for both HTML and CSS.
 * You should have used flexbox for different parts where appropriate.
